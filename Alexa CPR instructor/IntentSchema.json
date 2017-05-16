@@ -1,0 +1,91 @@
+{
+      "intents": [
+        {
+          "intent": "InjuredIntent"
+        },
+        {
+          "intent": "HowDoIDoIntent",
+          "slots": [
+            {
+              "name":"Step",
+              "type":"CPR_STEPS"
+            }
+          ]
+        },
+        {
+          "intent": "RestartIntent",
+          "slots": [
+            {
+              "name":"Step",
+              "type":"CPR_STEPS"
+            }
+          ]
+        },
+        {
+          "intent": "QuitCPRIntent"
+        },
+        {
+          "intent": "DoneIntent"
+        },
+        {
+          "intent": "ReadyIntent"
+        },
+		    {
+          "intent": "ChokingIntent"
+        },
+        {
+          "intent": "ConsciousChokingIntent"
+        },
+        {
+          "intent": "UnconsciousChokingIntent"
+        },
+        {
+          "intent": "CPRIntent"
+        },
+		    {
+          "intent": "AEDIntent"
+        },
+        {
+          "intent": "BleedingIntent"
+        },
+		    {
+          "intent": "BurnIntent"
+        },
+        {
+          "intent": "PoisonIntent"
+        },
+		    {
+          "intent": "NeckIntent"
+        },
+        {
+          "intent": "SpinalIntent"
+        },
+		    {
+          "intent": "StrokeIntent"
+        },
+        {
+          "intent": "WhatCanIDoIntent"
+        },
+        {
+          "intent": "AMAZON.StartOverIntent"
+        },
+        {
+          "intent": "AMAZON.RepeatIntent"
+        },
+        {
+          "intent": "AMAZON.HelpIntent"
+        },
+        {
+          "intent": "AMAZON.YesIntent"
+        },
+        {
+          "intent": "AMAZON.NoIntent"
+        },
+        {
+          "intent": "AMAZON.StopIntent"
+        },
+        {
+          "intent": "AMAZON.CancelIntent"
+        }
+      ]
+}

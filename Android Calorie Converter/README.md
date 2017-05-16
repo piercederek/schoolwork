@@ -1,0 +1,1 @@
+A simple android app that will take in an amount of exercise done and return the amount of calories burned and the equivalents in other amounts of exercise.

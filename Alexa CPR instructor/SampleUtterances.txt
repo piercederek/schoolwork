@@ -1,0 +1,106 @@
+HowDoIDoIntent how do i do {Step}
+HowDoIDoIntent i don't remember how to do {Step}
+HowDoIDoIntent i do not remember how to do {Step}
+
+RestartIntent restart {Step}
+RestartIntent redo {Step}
+RestartIntent start over at {Step}
+
+QuitCPRIntent stop CPR
+QuitCPRIntent quit CPR
+
+InjuredIntent i need help with checking an injured adult
+InjuredIntent someone is injured
+InjuredIntent they're injured
+InjuredIntent they are injured
+InjuredIntent someone is unconscious
+InjuredIntent someone has been injured
+InjuredIntent he's injured
+InjuredIntent he is injured
+InjuredIntent she's injured
+InjuredIntent she is injured
+
+ChokingIntent i need help with choking
+ChokingIntent someone is choking
+ChokingIntent someone is choking on something
+ChokingIntent he's choking
+ChokingIntent he is choking
+ChokingIntent she's choking
+ChokingIntent she is choking
+ChokingIntent they're choking
+ChokingIntent they are choking
+
+ConsciousChokingIntent conscious
+ConsciousChokingIntent he's conscious
+ConsciousChokingIntent he is conscious
+ConsciousChokingIntent she's conscious
+ConsciousChokingIntent she is conscious
+ConsciousChokingIntent they are conscious
+ConsciousChokingIntent they're conscious
+
+UnconsciousChokingIntent unconscious
+UnconsciousChokingIntent he's unconscious
+UnconsciousChokingIntent he is unconscious
+UnconsciousChokingIntent she's unconscious
+UnconsciousChokingIntent she is unconscious
+UnconsciousChokingIntent they are unconscious
+UnconsciousChokingIntent they're unconscious
+
+CPRIntent i need help with CPR
+CPRIntent how do i do CPR
+CPRIntent i need to do CPR
+
+AEDIntent i need help with AED
+AEDIntent how do i use an AED
+AEDIntent i need to use an AED
+AEDIntent how do i use a defibrillator
+AEDIntent i need to use a defibrillator
+
+BleedingIntent i need help with controlling bleeding
+BleedingIntent someone is bleeding
+BleedingIntent how do i control bleeding
+BleedingIntent he's bleeding
+BleedingIntent he is bleeding
+BleedingIntent she's bleeding
+BleedingIntent she is bleeding
+
+BurnIntent i need help with burns
+BurnIntent someone has been burned
+BurnIntent he's been burned
+BurnIntent he has been burned
+BurnIntent she's been burned
+BurnIntent she has been burned
+
+PoisonIntent i need help with poisoning
+PoisonIntent someone has been poisioned
+PoisonIntent someone ingested some kind of poison
+PoisonIntent he has been poisoned
+PoisonIntent he's been poisioned
+PoisonIntent she has been poisoned
+PoisonIntent she's been poisoned
+
+NeckIntent i need help with neck injuries
+NeckIntent they hurt their neck
+NeckIntent he hurt his neck
+NeckIntent she hurt her neck
+
+SpinalIntent i need help with spinal injuries
+SpinalIntent someone hurt their spine
+SpinalIntent he hurt his spine
+SpinalIntent she hurt her spine
+
+StrokeIntent i need help with stroke
+StrokeIntent someone is having a stroke
+StrokeIntent he is having a stroke
+StrokeIntent she is having a stroke
+
+ReadyIntent ready
+ReadyIntent i'm ready
+ReadyIntent i am ready
+
+DoneIntent done
+DoneIntent i'm done
+DoneIntent i am done
+ 
+WhatCanIDoIntent what can i say
+WhatCanIDoIntent what can you do
