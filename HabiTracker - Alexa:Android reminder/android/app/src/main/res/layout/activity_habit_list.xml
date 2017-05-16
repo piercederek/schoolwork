@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_habit_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="0dp"
+                tools:context="com.jadeinc.habitracker.HabitList">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <LinearLayout
+            android:id="@+id/menu"
+            android:layout_below="@+id/toolbar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/menu_tasks"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight=".9"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/my_button_bg"
+                android:text="tasks"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="0dp" />
+        <Button
+                android:id="@+id/menu_stats"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight=".9"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/my_button_bg"
+                android:text="stats"
+                android:onClick="onStatsClick"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".15"
+                android:layout_height="0dp" />
+        <Button
+                android:id="@+id/menu_settings"
+                android:layout_width="0dp"
+                android:layout_height="38dp"
+                android:layout_weight=".9"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/my_button_bg"
+                android:text="settings"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/tvDate0"
+            android:layout_below="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="8dp"
+            android:textSize="16sp"
+            android:background="@color/background"
+            android:text="Today's Date"/>
+    <!-- This will change to an actual date. e.g. Thursday, April 20, 2017 -->
+
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_today"
+            android:layout_below="@+id/tvDate0"/>
+
+    <ImageButton
+        android:id="@+id/add_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu"
+        android:background="@color/colorAccent"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/plus_green" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvDate1"-->
+    <!--android:layout_below="@+id/lv_today"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:padding="8dp"-->
+    <!--android:textSize="16sp"-->
+    <!--android:background="@color/background"-->
+    <!--android:text="Tomorrow's Date"/>-->
+    <!--&lt;!&ndash; This will change to an actual date. e.g. Friday, April 21, 2017 &ndash;&gt;-->
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical"-->
+    <!--android:id="@+id/task_item1"-->
+    <!--android:layout_below="@+id/tvDate1"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<CheckBox android:id="@+id/checkbox_item0"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="22sp"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:text="WATER THE PLANTS"-->
+    <!--android:onClick="onCheckboxClicked"/>-->
+    <!--&lt;!&ndash; The text should change to the title of the event. Not hardcoded.&ndash;&gt;-->
+
+    <!--<CheckBox android:id="@+id/checkbox_item1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="22sp"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:text="GO TO THE GYM"-->
+    <!--android:onClick="onCheckboxClicked"/>-->
+    <!--&lt;!&ndash; The text should change to the title of the event. Not hardcoded.&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tvDate2"-->
+    <!--android:layout_below="@+id/task_item1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:padding="8dp"-->
+    <!--android:textSize="16sp"-->
+    <!--android:background="@color/background"-->
+    <!--android:text="Tomorrow Tomorrow's Date"/>-->
+    <!--&lt;!&ndash; This will change to an actual date. e.g. Saturday, April 22, 2017 &ndash;&gt;-->
+
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical"-->
+    <!--android:id="@+id/task_item2"-->
+    <!--android:layout_below="@+id/tvDate2"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<CheckBox android:id="@+id/checkbox_item0"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="22sp"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:text="Water the plants"-->
+    <!--android:onClick="onCheckboxClicked"/>-->
+    <!--&lt;!&ndash; The text should change to the title of the event. Not hardcoded.&ndash;&gt;-->
+
+    <!--<CheckBox android:id="@+id/checkbox_item1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="22sp"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:paddingTop="10dp"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:text="Go to the gym"-->
+    <!--android:onClick="onCheckboxClicked"/>-->
+    <!--&lt;!&ndash; The text should change to the title of the event. Not hardcoded.&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+</RelativeLayout>

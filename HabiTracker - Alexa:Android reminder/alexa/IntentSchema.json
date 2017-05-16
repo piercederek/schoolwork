@@ -1,0 +1,120 @@
+{
+  "intents": [
+    {
+      "intent": "ReadAllIntent"
+    },
+    {
+      "intent": "DoTodayIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "taskName",
+          "type": "AMAZON.LITERAL"
+        }
+      ],
+      "intent": "DeleteTaskIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "taskName",
+          "type": "AMAZON.LITERAL"
+        },
+        {
+          "name": "frequency",
+          "type": "FREQUENCY"
+        },
+        {
+          "name": "taskTime",
+          "type": "TASKTIME"
+        }
+      ],
+      "intent": "AllDetailsTaskIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "editName",
+          "type": "AMAZON.LITERAL"
+        }
+      ],
+      "intent": "EditStatsIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "editType",
+          "type": "CHANGETYPE"
+        }
+      ],
+      "intent": "EditWhatIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "statsName",
+          "type": "AMAZON.LITERAL"
+        }
+      ],
+      "intent": "GetStatsIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "completeTask",
+          "type": "AMAZON.LITERAL"
+        }
+      ],
+      "intent": "CompletedSpecificIntent"
+    },
+    {
+      "intent": "TaskCompletedIntent"
+    },
+    {
+      "intent": "NewTaskIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "taskName",
+          "type": "AMAZON.LITERAL"
+        }
+      ],
+      "intent": "TaskNameIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "frequency",
+          "type": "FREQUENCY"
+        }
+      ],
+      "intent": "TaskFrequencyIntent"
+    },
+    {
+      "slots": [
+        {
+          "name": "taskTime",
+          "type": "TASKTIME"
+        }
+      ],
+      "intent": "TaskTimeIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}

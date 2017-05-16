@@ -1,0 +1,24 @@
+ReadAllIntent what are my habits
+ReadAllIntent what habits am i tracking
+DoTodayIntent what do i have to do today
+DoTodayIntent what habits do i still have to do today
+DeleteTaskIntent stop tracking {water the plants|taskName}
+DeleteTaskIntent remove {water the plants|taskName}
+DeleteTaskIntent delete {water the plants|taskName}
+AllDetailsTaskIntent i want to {water the plants|taskName} {frequency} remind me in the {taskTime}
+AllDetailsTaskIntent remind me to {water the plants|taskName} {frequency} in the {taskTime}
+EditStatsIntent i want to change {water the plants|editName}
+EditStatsIntent i want to edit {water the plants|editName}
+EditWhatIntent {editType}
+GetStatsIntent what are my stats for {water the plants|statsName}
+GetStatsIntent tell me the stats for {water the plants|statsName}
+CompletedSpecificIntent i finished {water the plants|completeTask}
+CompletedSpecificIntent i completed {water the plants|completeTask}
+TaskCompletedIntent i want to check off a habit
+NewTaskIntent track a new habit
+NewTaskIntent form a new habit
+NewTaskIntent remind me for a new habit
+TaskNameIntent i want to {water the plants|taskName}
+TaskFrequencyIntent {frequency}
+TaskTimeIntent {taskTime}
+AMAZON.HelpIntent what can i say

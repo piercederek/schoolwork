@@ -1,0 +1,4 @@
+frequency
+daily
+weekly
+monthly

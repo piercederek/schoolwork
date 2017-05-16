@@ -1,0 +1,3 @@
+editType
+frequency
+time of day
